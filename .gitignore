@@ -1,0 +1,11 @@
+.DS_Store
+
+/*/__pycache__
+
+/*/example/__pycache__
+
+/*/paper/__pycache__
+
+*.txt
+*.pdf
+*.npy
