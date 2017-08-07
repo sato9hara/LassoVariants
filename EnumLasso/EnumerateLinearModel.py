@@ -3,7 +3,7 @@
 @author: Satoshi Hara
 
 (Class)
-> EnumLasso(modeltype='regression', maxitr=1000, tol=1e-4, rho=0.1, enumtype='r', r=1.1, k=10, delta=0, verbose=0, save=''):
+> EnumLasso(modeltype='regression', maxitr=1000, tol=1e-4, rho=0.1, enumtype=‘k’, r=1.1, k=10, delta=0, verbose=0, save=''):
     modeltype   : 'regression' or 'classification'
     maxitr      : maximum number of iterations for Lasso
     tol         : tolerance parameter to stop the iterative optimization
@@ -78,7 +78,7 @@ class SupportedLasso(object):
             return f + self.rho_ * g
 
 class EnumLasso(object):
-    def __init__(self, modeltype='regression', maxitr=1000, tol=1e-4, rho=0.1, enumtype='r', r=1.1, k=10, delta=0, warm_start=True, check=0.99, verbose=0, save=''):
+    def __init__(self, modeltype='regression', maxitr=1000, tol=1e-4, rho=0.1, enumtype=‘k’, r=1.1, k=10, delta=0, warm_start=True, check=0.99, verbose=0, save=''):
         self.modeltype_ = modeltype
         self.maxitr_ = maxitr
         self.tol_ = tol
